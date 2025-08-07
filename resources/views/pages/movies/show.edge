@@ -21,10 +21,10 @@
         <nav>
             <a href="{{ route('home') }}">Home</a>
             <a href="{{ route('movies.index') }}">Movies</a>
-            <a href="{{ route('movies.show') }}">My Movie</a>
+            <a href="{{ route('movies.show', {slug: 'my-movie'}) }}">My Movie</a>
+            <a href="{{ route('movies.show', {slug: 'my-other-movie'}) }}">My Other Movie</a>
         </nav>
 
-        <h1>All the sweet movies brah!</h1>
-        <h2>Shared with you: {{ movie ? movie : "" }}</h2>
+        {{{ movie ? movie : "" }}}
     </body>
 </html>

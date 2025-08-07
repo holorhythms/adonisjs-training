@@ -17,12 +17,14 @@
         @stack('dumper')
     </head>
     <body class="min-h-screen w-screen font-sans">
+
         <nav>
             <a href="{{ route('home') }}">Home</a>
             <a href="{{ route('movies.index') }}">Movies</a>
             <a href="{{ route('movies.show', {slug: 'my-movie'}) }}">My Movie</a>
             <a href="{{ route('movies.show', {slug: 'my-other-movie'}) }}">My Other Movie</a>
         </nav>
-        <h1>This is my home!</h1>
+
+        <h1>All the sweet movies brah!</h1>
     </body>
 </html>
