@@ -13,5 +13,7 @@ import { HttpContext } from '@adonisjs/core/http'
 router.on('/').render('pages/home')
 
 router.get('/movies', async function (ctx: HttpContext) {
-    return "All my movies brah"
+
+    ctx.view.share({ movie: "My awesome move to share" })
+    return ctx.view.render('pages/movies')
 })
