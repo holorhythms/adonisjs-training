@@ -8,5 +8,10 @@
 */
 
 import router from '@adonisjs/core/services/router'
+import { HttpContext } from '@adonisjs/core/http'
 
 router.on('/').render('pages/home')
+
+router.get('/movies', async function (ctx: HttpContext) {
+    return "All my movies brah"
+})
